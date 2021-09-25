@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  color: #3a3c47;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e,#b224ef , #7579ff);
+    background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+h1 {
+  margin-top: 48px;
+}
+
+form {
+  background: cornsilk;
+  max-width: 360px;
+  width: 100%;
+  padding: 58px 44px;
+  border: 1px solid #e1e2f0;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 0 rgba(42, 45, 48, 0.12);
+  transition: all 0.3s ease;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.row label {
+  font-size: 13px;
+  font-weight: 900;
+  color: #8086a9;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.row input {
+  flex: 1;
+  padding: 13px;
+  margin-top: 5px;
+  border: 1px solid #d6d8e6;
+  border-radius: 4px;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(109, 93, 93, 0.4);
+  transition: all 0.2s ease-out;
+}
+
+.row input:focus {
+  outline: none;
+  box-shadow: inset 2px 2px 5px 0 rgba(42, 45, 48, 0.12);
+}
+
+.row input::placeholder {
+  color: #C8CDDF;
+}
+
+button {
+  width: 140px;
+  margin-left: 65px;
+  padding: 12px;
+  font-size: 18px;
+  background: #15C39A;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  
+  transition: background 0.2s ease-out;
+}
+.submit{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e,#b224ef , #7579ff);
+    background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+.forgot-pass{
+  /* margin-top: 15px; */
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0c0101;
+  cursor: pointer;
+}
+
+.forgot-pass:hover{
+  color: red;
+}
+.other{
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: -50px;
+}
+
+.other ul{
+  list-style: none;
+}
+
+.other ul li{
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.other img{
+  width: 40px;
+  height: 40px;
+}
+
+
+
+@media(max-width: 458px) {
+  
+  body {
+    margin: 0 18px;
+  }
+  
+  form {
+    background: #f9faff;
+    border: none;
+    box-shadow: none;
+    padding: 40px 0;
+  }
+  button {
+    width: 200px;
+    margin-left: 55px;
+  }
+  .row input {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
